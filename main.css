@@ -17,7 +17,7 @@ header{
 }
 
 h1{
-    padding-top: 28vh;
+    padding-top: 20vh;
     text-align: center;
     color: #421c5e;
 }
@@ -44,6 +44,9 @@ nav ul li a{
 
 }
 
+
+/*ny sektion - header text*/
+
 .text-box h1{
     font-size: 60px;
 }
@@ -52,6 +55,10 @@ nav ul li a{
     text-align: center;
     font-size: 14px;
 }
+
+
+/*sektion med velkommen og knap til om mig*/
+
 
 .welcome{
     display: block;
@@ -64,13 +71,17 @@ nav ul li a{
     display: block;
     text-align: center;
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-top: 1vh;
+    padding-bottom: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 4%;
 }
 
 .button{
     display: inline-block;
     text-decoration: none;
-    background: #DDC3F0;
+    background:transparent;
     color: #000;
     border: 1px solid #DDC3F0;
     padding: 12px 34px;
@@ -78,6 +89,9 @@ nav ul li a{
     position: relative;
     cursor: pointer;
 }
+
+
+/*projekter med grid*/
 
 
 .container{
@@ -103,4 +117,60 @@ footer img{
     justify-content: left;
     width: 50px; 
     padding: 3px;
+}
+
+
+/*styling: desktop version*/
+
+
+@media screen and (min-width: 1000px) {
+    
+    .header{
+        min-height: 100vh;
+        background-image: url(baggrund.jpg);
+    }
+
+
+    .text-box h1{
+        font-size: 65px;
+    }
+
+
+
+    .welcome h2{
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+
+
+    .welcome p{
+        padding-top: 1vh;
+        padding-bottom: 1%;
+        padding-left: 35%;
+        padding-right: 35%;
+        margin-bottom: 2%;
+        
+    }
+
+/*hover-effekt virker kun på desktop og er derfor kun implementeret her*/
+
+    .button:hover{
+        border: 1px solid #DDC3F0;
+        background: #DDC3F0;
+        transition: 1s;
+    }
+
+
+    .container{
+        width: auto;
+        margin: auto;
+        height: 100%;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        position: relative;
+    }
+
 }

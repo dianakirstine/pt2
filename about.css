@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    
+    width: 100%;
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+h1:hover{
+    color: #421c5e;
+    transition: 1s;
+}
+
+
+
+nav img{
+    width: 150px;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    padding: 2% 5% 2% 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 1%;
+    padding-bottom: 20%;
+    position: relative;
+}
+
+nav ul li a{
+    color:#000;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+/*  om mig sektion  */
+
+.text-about img{
+    width: 45%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4%;
+    
+}
+
+h2{
+    padding-bottom: 6%;
+    font-size: 22px;
+    text-align: center;
+}
+
+.text-about p{
+    font-size: 15px;
+    display:inline-block;
+    text-align: center;
+    margin-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2vh;
+    padding-bottom: 1%;
+}
+
+
+/*  CV sektion (png) */
+
+h2{
+    padding-top: 10%;
+}
+
+img{
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    background:transparent;
+    color: #000;
+    border: 1px solid #DDC3F0;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+footer p{
+    text-align: right;
+    margin-right: 22px;
+    font-size: 10px;
+}
+
+footer img{
+    display: inline-block;
+    justify-content: left;
+    width: 50px; 
+    padding: 3px;
+}
+
+
+@media screen and (min-width: 1000px) {
+  
+
+/* sektion - tekst om mig */
+
+    .text-about p{
+        display: flex;
+        margin-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2vh;
+        padding-bottom: 1%;
+        font-size: 18px;
+    }
+
+
+  img{
+        width: 48%;
+        display: flex;
+        float: left;
+    }
+  
+
+
+   /* sektion - mit CV i png format */
+  
+
+    .cv{
+        padding-top: 5vh;
+    }
+
+
+
+    footer{
+        padding-top: 70%;
+    }
+  
+
+}
